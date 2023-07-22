@@ -1,0 +1,66 @@
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:rgb(182, 101, 175);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 1rem;
+}
+.moviesList {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 1fr) );
+    gap: 10px;
+}
+
+.movie-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0.5rem;
+    grid-area: "card";
+}
+
+.movie-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.movie-imdb {
+    font-size: 1rem;
+    color: #666;
+}
+.movie-poster{
+    width: 15em;
+}
+.movie-summary {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .movie-card {
+        flex-basis: 45%; 
+    }
+
+    .moviesList {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(50px, 1fr) );
+        gap: 5px;
+    }
+    
+}
