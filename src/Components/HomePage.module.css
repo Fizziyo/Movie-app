@@ -1,0 +1,15 @@
+.homepage{
+    width:100vw;
+    height: 100vh;
+    background-image:url("https://www.technomusk.com/wp-content/uploads/2018/06/iStock_19377019_res.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+h1{
+    text-align: center;
+    color: darkgoldenrod;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 40px;
+}

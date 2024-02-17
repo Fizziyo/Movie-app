@@ -1,0 +1,43 @@
+.header {
+  background-color: #333;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px; /* Space between list items */
+}
+
+.li {
+  position: relative;
+}
+
+.li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.li a:hover {
+  background-color: #555;
+}
+
+/* If you need an active state for your links, you can add another class in your component and style it here */
+.li a.active {
+  background-color: #555;
+}
+
+  
